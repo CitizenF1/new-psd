@@ -26,6 +26,8 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 auto;
 }
 
+/* интро */
+
 .intro {
 	display: flex;
 	flex-direction: column;
@@ -39,6 +41,37 @@ h1, h2, h3, h4, h5, h6 {
 	background-size: cover;
 }
 
+.intro__inner{
+	width: 100%;
+	min-width: 880px;
+	margin: 0 auto;
+}
+
+.intro__title {
+	color: #fff;
+	font-size: 150px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1;
+}
+
+.intro__title::after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	margin: 60px auto 0; 
+
+}
+
+.intro__suptitle {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 72px;
+	color: #fff;
+	text-align: center;
+}
+
 /* heaeder */
 .header {
 	width: 100%;
@@ -49,6 +82,12 @@ h1, h2, h3, h4, h5, h6 {
 	left: 0;
 	right: 0;
 	z-index: 1000;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .header__logo {
@@ -66,10 +105,36 @@ h1, h2, h3, h4, h5, h6 {
 .nav__link {
 	color: #fff;
 	text-decoration: none;
+	vertical-align: top;
+	margin: 0 15px;
+	position: relative;
+	
+	color: #fff;
+	text-decoration: none;
 
 	transition: color .2s linear;
 }
 
+.nav__link:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	opacity: 0;
+
+	background-color: #fce38a;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+
+	transition: opacity .1s linear;
+}
+
 .nav__link:hover {
 	color: #fce38a;
+}
+
+.nav__link:hover:after {
+	opacity: 1;
 }
