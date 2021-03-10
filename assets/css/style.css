@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 .header__logo {
 	font-size: 30px;
 	font-weight: 700;
-	color: #fff;
+	color: rgb(70, 189, 130);
 }
 
 /* навигация */
@@ -103,13 +103,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav__link {
-	color: #fff;
+	color: rgb(70, 189, 130);
 	text-decoration: none;
 	vertical-align: top;
 	margin: 0 15px;
 	position: relative;
 	
-	color: #fff;
 	text-decoration: none;
 
 	transition: color .2s linear;
@@ -180,6 +179,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .slider__inner {
 	display: flex;
+	justify-content: space-between;
 }
 
 .slider__item {
@@ -216,4 +216,46 @@ h1, h2, h3, h4, h5, h6 {
 .slider__num {
 	font-size: 24px;
 	font-weight: 700;
+}
+
+/* section */
+
+.section {
+	padding: 80px 0;
+}
+
+.section__header {
+	width: 100%;
+	max-width: 950px;
+	margin: 0 auto 40px;
+
+	text-align: center;
+}
+
+.section__suptitle {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 24px;
+	color: #333;
+}
+
+.section__title {
+	font-size: 30px;
+	font-weight: 700;
+	color: #333;
+	text-transform: uppercase;
+}
+
+.section__title::after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	margin: 30px auto;
+
+	background-color: #f38181;
+}
+
+.section__text {
+	font-size: 15px;
+	color: #999;
 }
