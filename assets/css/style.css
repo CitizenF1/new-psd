@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* навигация */
 .nav {
-	font-size: 14px;
+	font-size: 15px;
 	text-decoration: uppercase;
 }
 
@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 	content: "";
 	display: block;
 	width: 100%;
-	height: 1px;
+	height: 3px;
 	opacity: 0;
 
 	background-color: #fce38a;
